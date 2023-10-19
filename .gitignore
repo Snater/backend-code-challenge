@@ -1,7 +1,12 @@
-node_modules
-npm-debug.log
+.idea
 .nyc_output
-coverage
 .vscode
+areas
+coverage
+dist
+node_modules
+
 **/.DS_Store
 .zip
+all-cities.json
+npm-debug.log
