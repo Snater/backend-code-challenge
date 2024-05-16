@@ -14,7 +14,7 @@ app.use(cabin.middleware);
 // Since the provided token is a non-standard JWT, a custom middleware is used to check the token:
 app.use(authorization);
 app.use(router);
-app.use((error: Error|ServerError, _req: Request, res: Response, next: NextFunction) => {
+app.use((error: Error | ServerError, _req: Request, res: Response, next: NextFunction) => {
 	signale.error(error.message);
 
 	if (error instanceof ServerError) {

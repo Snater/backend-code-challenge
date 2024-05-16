@@ -1,3 +1,3 @@
-type Unit = 'km'|'mi'
+type Unit = 'km' | 'mi';
 
 export default Unit;

@@ -25,7 +25,7 @@ export const areaResult = (ctx: Context) => {
 
 		ctx.body = new Cities(JSON.parse(fileContents)).toJSON();
 
-	} catch (e) {
+	} catch (_e) {
 		throw new ServerError('Error reading aggregated results', 500);
 	}
 };

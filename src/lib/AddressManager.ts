@@ -37,8 +37,8 @@ export default class AddressManager {
 		return unit === 'km' ? km : km * AddressManager.kmToMile;
 	}
 
-	static findAddresses(...guids: string[]): (Address|undefined)[] {
-		const addresses: (Address|undefined)[] = [];
+	static findAddresses(...guids: string[]): (Address | undefined)[] {
+		const addresses: (Address | undefined)[] = [];
 
 		_.forEach(AddressManager.getAddresses(), (address: Address) => {
 			_.forEach(guids, (guid, key) => {

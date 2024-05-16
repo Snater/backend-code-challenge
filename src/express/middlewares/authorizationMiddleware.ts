@@ -14,7 +14,7 @@ export default function authorization(req: Request, _res: Response, next: NextFu
 		} else {
 			next(new ServerError('Authentication failed', 401));
 		}
-	} catch (e) {
+	} catch (_e) {
 		next(new ServerError('Authentication error', 401));
 	}
 }

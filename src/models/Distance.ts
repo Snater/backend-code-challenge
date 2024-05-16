@@ -6,7 +6,7 @@ type DistanceJSON = {
 	unit: Unit
 	from: Address
 	to: Address
-}
+};
 
 export default class Distance {
 

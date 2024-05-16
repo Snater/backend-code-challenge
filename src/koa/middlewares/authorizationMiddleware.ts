@@ -10,7 +10,7 @@ export default async function authorization(ctx: Context, next: Next) {
 
 	try {
 		secret = ctx.req.headers.authorization.split(' ')[1];
-	} catch (e) {
+	} catch (_e) {
 		throw new ServerError('Authentication error', 401);
 	}
 

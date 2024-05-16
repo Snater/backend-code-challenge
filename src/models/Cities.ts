@@ -2,7 +2,7 @@ import Address from './Address';
 
 type CitiesJSON = {
 	cities: Address[]
-}
+};
 
 export default class Cities {
 

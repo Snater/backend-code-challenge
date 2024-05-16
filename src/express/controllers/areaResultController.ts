@@ -32,7 +32,7 @@ export function areaResult(
 
 		res.send(new Cities(JSON.parse(fileContents)).toJSON());
 
-	} catch (e) {
+	} catch (_e) {
 		next(new ServerError('Error reading aggregated results', 500));
 	}
 }
