@@ -1,11 +1,14 @@
 {
 	"compilerOptions": {
 		"esModuleInterop": true,
-		"lib": ["ES2019"],
+		"lib": ["ES2020"],
 		"module": "commonjs",
 		"moduleResolution": "node",
 		"outDir": "dist",
 		"strict": true,
-		"target": "ES2016"
+		"target": "ES2016",
+		"types": ["node", "jest"]
 	},
+	"include": ["src/**/*", "types/**/*"],
+	"exclude": ["src/bun/**/*"]
 }

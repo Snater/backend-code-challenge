@@ -1,19 +1,33 @@
 # GAN Integrity backend code challenge
 
+This is my solution to the GAN Integrity backend coding challenge. The solution is implemented per three different servers:
+- [Bun](https://bun.sh/) (using Bun runtime environment)
+- [Express](https://expressjs.com/) (using Node.js runtime environment)
+- [koa](https://koajs.com/) (using Node.js runtime environment)
+
 ## Solution instructions
 
 1. Run `npm install`.
-2. Compile and start up the server by running `npm run deploy:express` to deploy the Express server or `npm run deploy:koa` to deploy the koa server.
+2. Compile and start up the server, by executing either: `npm run deploy:bun`, `npm run deploy:express`, or `npm run deploy:koa`.
 3. In a separate terminal, run the challenge script `npm start`.
 
-## Challenge instructions
+## Tests
 
-The script `index.js` uses a local api to perform various operations on a set of cities. Your task is to implement an api so that the script runs successfully all the way to the end.
+In addition to the solution, some basic tests are implemented. They may be executed all at once per `npm test`. The Bun tests use the [Bun test runner](https://bun.sh/docs/cli/test), while the Express and koa tests use the [Jest test framework](https://jestjs.io/).
 
-Run `npm install` and `npm run start` to start the script.
+## Original instructions
 
-Your api can load the required data from [here](addresses.json).
+>
+>The script `index.js` uses a local api to perform various operations on a set of cities. Your task is to implement an api so that the script runs successfully all the way to the end.
+>
+>Run `npm install` and `npm run start` to start the script.
+>
+>Your api can load the required data from [here](addresses.json).
+>
+>In the distance calculations you can assume the earth is a perfect sphere and has a radius is 6371 km.
+>
+>Once you are done, please provide us with a link to a git repo with your code, ready to run.
 
-In the distance calculations you can assume the earth is a perfect sphere and has a radius is 6371 km.
+---
 
-Once you are done, please provide us with a link to a git repo with your code, ready to run.
+Source repository: https://github.com/gandevops/backend-code-challenge
