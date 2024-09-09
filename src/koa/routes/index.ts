@@ -1,12 +1,12 @@
+import {default as KoaRouter, Joi} from '@koa-better-modules/joi-router';
 import {allCities} from '../controllers/allCitiesController';
 import {area} from '../controllers/areaController';
 import {areaResult} from '../controllers/areaResultController';
 import {distance} from '../controllers/distanceController';
 import {citiesByTag} from '../controllers/queryController';
 import {index} from '../controllers/staticController';
-import {default as koaRouter, Joi} from 'koa-joi-router';
 
-const router = koaRouter();
+const router = new KoaRouter();
 
 router.get('/', index);
 
