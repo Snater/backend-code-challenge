@@ -5,6 +5,8 @@ This is my solution to the GAN Integrity backend coding challenge. The solution 
 - [Express](https://expressjs.com/) (using Node.js runtime environment)
 - [koa](https://koajs.com/) (using Node.js runtime environment)
 
+I am not affiliated with GAN Integrity, I have never received a response from them regarding my submitted solution. I am just using the opportunity to try out different approaches solving the challenge.
+
 ## Solution instructions
 
 1. Run `npm install`.
